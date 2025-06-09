@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+    <link rel="stylesheet" href="./../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to forHealth!</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="./../index.html" target="_self">
+                <button>Home             
+                </button>
+            </a>
+        </div>
+        <div id="dropTools">
+            <button id="btnTools">Tools</button>
+            <div id="tools">
+                <a href="reverse.html" target="_self">Reverse</a>
+                <a href="complement.html" target="_self">Complement</a>
+                <a href="reverse-complement.html" target="_self">Reverse-Complement</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>Reverse</h1>
+            <p>Get the reverse from a nucleotide sequence</p>
+            <label for="seq">Nucleotide sequence: </label><br>
+            <textarea name="seq" id="seq" cols="40" rows="25"></textarea><br>
+            <button type="button" onclick="doReverse()">Generate</button>
+            <div id="result">
+
+            </div>
+        </section>
+    </main>
+    <script src="./../JS/reverse.js"></script>
+</body>
+</html>

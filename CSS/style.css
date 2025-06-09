@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+:root {
+    --ver-esc: #731224;
+    --ver-cl: #BF2633;
+    --azul-esc: #234459;
+    --azul-med: #30618C;
+    --azul-cl:#BFD1D9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+body > header {
+    background-color: var(--ver-esc);
+}
+
+header h1 {
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--ver-cl);
+}
+
+nav > div {
+    margin: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav div button:hover {
+    background-color: #d1424e;
+}
+
+nav div button {
+    padding: 10px 20px;
+    background-color: #8f2029;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dropTools {
+    position: relative;
+}
+
+#dropTools:hover #tools {
+    display: flex;
+    flex-direction: column;
+}
+ 
+#tools {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#tools > a {
+    margin: 5px 0px;
+    padding: 10px 10px;
+    background-color: #8f2029;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#tools > a:hover {
+    background-color: #d1424e;
+}
+
+body, main {
+    background-color: var(--azul-cl);
+}
+
+body > main > section {
+    background-color: var(--azul-med);
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 80vw;
+    border-radius: 20px;
+}
+
+body > main > section > h1, p {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.dnaOrRna {
+    margin: 15px;
+    padding: 7px 15px;
+    border-style: solid;
+    box-shadow: 2px 2px 10px black;
+}
+
+.dnaOrRna:hover {
+    box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+
+body > main > section > input {
+    margin: 20px;
+}
+
+body > main > section > textarea {
+    margin-top: 20px;
+    color: black;
+}
+
+body > main > section > button {
+    margin-top: 15px;
+    padding: 15px 15px;
+    background-color: var(--azul-esc);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+}
+
+body > main > section > button:hover {
+    background-color: var(--azul-med);
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    background-color: transparent;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
