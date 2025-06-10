@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 :root {
-    --ver-esc: #731224;
-    --ver-cl: #BF2633;
-    --azul-esc: #234459;
-    --azul-med: #30618C;
-    --azul-cl:#BFD1D9;
+    --header:#ca5a56; 
+    --menu:#d47773;
+    --botoes-menu:#cf4b47;
+    --botoes-menu-hover:#F14741;
+    --body-main:#9bbbdb;
+    --section:#7fa2c5;
+    --botoes-body:#6da3da;
+    --botoes-body-hover: #76B4F1;
 }
 
 * {
@@ -18,7 +21,7 @@
 }
 
 body > header {
-    background-color: var(--ver-esc);
+    background-color: var(--header);
 }
 
 header h1 {
@@ -31,7 +34,7 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: var(--ver-cl);
+    background-color: var(--menu);
 }
 
 nav > div {
@@ -39,16 +42,16 @@ nav > div {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-nav div button:hover {
-    background-color: #d1424e;
-}
-
 nav div button {
     padding: 10px 20px;
-    background-color: #8f2029;
+    background-color: var(--botoes-menu);
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+}
+
+nav div button:hover {
+    background-color: var(--botoes-menu-hover);
 }
 
 #dropTools {
@@ -69,7 +72,7 @@ nav div button {
 #tools > a {
     margin: 5px 0px;
     padding: 10px 10px;
-    background-color: #8f2029;
+    background-color: var(--botoes-menu);
     border-style: solid;
     border-radius: 10px;
     border-color: black;
@@ -79,15 +82,15 @@ nav div button {
 }
 
 #tools > a:hover {
-    background-color: #d1424e;
+    background-color: var(--botoes-menu-hover);
 }
 
 body, main {
-    background-color: var(--azul-cl);
+    background-color: var(--body-main);
 }
 
 body > main > section {
-    background-color: var(--azul-med);
+    background-color: var(--section);
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -112,6 +115,18 @@ body > main > section > h1, p {
     cursor: pointer;
 }
 
+body > main > section > div > img {
+    width: 25%;
+    height: 25%;
+}
+
+body > main > section > p {
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5em;
+}
+
 body > main > section > input {
     margin: 20px;
 }
@@ -124,13 +139,13 @@ body > main > section > textarea {
 body > main > section > button {
     margin-top: 15px;
     padding: 15px 15px;
-    background-color: var(--azul-esc);
+    background-color: var(--botoes-body);
     border-radius: 15px;
     box-shadow: 2px 2px 10px black;
 }
 
 body > main > section > button:hover {
-    background-color: var(--azul-med);
+    background-color: var(--botoes-body-hover);
     cursor: pointer;
 }
 
