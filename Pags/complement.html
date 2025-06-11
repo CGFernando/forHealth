@@ -37,16 +37,20 @@
         <section>
             <h1>Complement</h1>
             <p>Get the second strand from a DNA sequence, or the RNA from the DNA or the RNA to DNA</p>
-            <label for="DNA" class="dnaOrRna">DNA &#10132; DNA</label>
-            <input type="radio" name="type-seq" id="DNA">
-            <label for="RNA" class="dnaOrRna">DNA &#10132; RNA</label>
-            <input type="radio" name="type-seq" id="RNA">
-            <label for="RNADNA" class="dnaOrRna">RNA &#10132; DNA</label>
-            <input type="radio" name="type-seq" id="RNADNA"> <br>
-            <label for="seq">Nucleotide sequence: </label><br>
-            <textarea name="seq" id="seq" cols="40" rows="25"></textarea><br>
-            <button type="button" onclick="doComplement()">Generate</button>
-            <div id="result"></div>
+            <div id="inputs">
+                <label for="DNA" class="dnaOrRna">DNA &#10132; DNA</label>
+                <input type="radio" name="type-seq" id="DNA">
+                <label for="RNA" class="dnaOrRna">DNA &#10132; RNA</label>
+                <input type="radio" name="type-seq" id="RNA">
+                <label for="RNADNA" class="dnaOrRna">RNA &#10132; DNA</label>
+                <input type="radio" name="type-seq" id="RNADNA"> <br>
+                <label for="seq">Nucleotide sequence: </label><br>
+                <textarea name="seq" id="seq" cols="40" rows="25"></textarea><br>
+                <button type="button" onclick="doComplement()">Generate</button>
+            </div>
+            <div id="result">
+
+            </div>
         </section>
     </main>
     <script src="./../JS/complement.js"></script>

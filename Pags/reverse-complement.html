@@ -37,15 +37,17 @@
         <section>
             <h1>Reverse-Complement</h1>
             <p>Get the reverse and complement from a DNA strand, or the RNA from the DNA or the RNA to DNA</p>
-            <label for="DNA" class="dnaOrRna">DNA &#10132; DNA</label>
-            <input type="radio" name="type-seq" id="DNA">
-            <label for="RNA" class="dnaOrRna">DNA &#10132; RNA</label>
-            <input type="radio" name="type-seq" id="RNA">
-            <label for="RNADNA" class="dnaOrRna">RNA &#10132; DNA</label>
-            <input type="radio" name="type-seq" id="RNADNA"> <br>
-            <label for="seq">Nucleotide sequence: </label><br>
-            <textarea name="seq" id="seq" cols="40" rows="25"></textarea><br>
-            <button type="button" onclick="doReverseComplement()">Generate</button>
+            <div id="inputs">
+                <label for="DNA" class="dnaOrRna">DNA &#10132; DNA</label>
+                <input type="radio" name="type-seq" id="DNA">
+                <label for="RNA" class="dnaOrRna">DNA &#10132; RNA</label>
+                <input type="radio" name="type-seq" id="RNA">
+                <label for="RNADNA" class="dnaOrRna">RNA &#10132; DNA</label>
+                <input type="radio" name="type-seq" id="RNADNA"> <br>
+                <label for="seq">Nucleotide sequence: </label><br>
+                <textarea name="seq" id="seq" cols="40" rows="25"></textarea><br>
+                <button type="button" onclick="doReverseComplement()">Generate</button>
+            </div>
             <div id="result"></div>
         </section>
     </main>
