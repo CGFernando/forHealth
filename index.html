@@ -3,84 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forHealth</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/style-slide.css">
+    <title>ForHealph</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to forHealth!</h1>
+        <h1>Welcome to ForHealph!</h1>
     </header>
     <nav>
-        <div>
-            <a href="index.html" target="_self">
-                <button>
-                    Home             
-                </button>
-            </a>
-        </div>
-        <div id="dropTools">
-            <button id="btnTools">Tools</button>
-            <div id="tools">
-                <a href="Pags/reverse.html" target="_self">Reverse</a>
+        <a href="index.html" target="_self">Home</a>
+        <div id="tools">Tools
+            <div id="toolsLink">
+                <a href="Pags/reverse.html" target="self">Reverse</a>
                 <a href="Pags/complement.html" target="_self">Complement</a>
                 <a href="Pags/reverse-complement.html" target="_self">Reverse-Complement</a>
             </div>
         </div>
-        <div>
-            <a href="./Pags/about.html" target="_self">
-                <button>
-                    About
-                </button>
-            </a>
-        </div>
+        <a href="Pags/about.html" target="_self">About</a>
     </nav>
-    <main>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="imagens/6435.jpg">
-                <div class="article">
-                    <h1>Molecular Basis of MC1R Activation: Mutation-Induced Alterations in Structural Dynamics</h1>
-                    <p>Assessment of Melanocortin-1 Receptor (MC1R) conformational dynamics and the binding energy with its ligand, the alpha-MSH, in response to Asp84Glu and Asp294His variants.</p>
-                </div>
-                <div class="text"><a href="https://doi.org/10.1002/prot.26722" target="_blank">Read more</a></div>
+    <div id="slideShowContainer">
+        <div class="mySlides">
+            <div class="numberText"></div>
+            <img src="imagens/MC1R_artigo.png" alt="Paper MC1R">
+            <div class="slideText fade">
+                <h1>Molecular Basis of MC1R Activation: Mutation-Induced Alterations in Structural Dynamics</h1>
+                <p>Assessment of Melanocortin-1 Receptor (MC1R) conformational dynamics and the binding energy with its ligand, the alpha-MSH, in response to Asp84Glu and Asp294His variants.</p>
+                <a href="https://doi.org/10.1002/prot.26722" target="_blank">Read more</a>
             </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="imagens/2148859866.jpg">
-                <div class="article">
-                    <h1>Assessment of Kaistella jeonii esterase conformational dynamics in response to poly(ethylene terephthalate) binding. Current Research In Structural Biology</h1>
-                </div>
-                <div class="text"><a href="https://doi.org/10.1016/j.crstbi.2024.100130" target="_blank">Read more</a></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="imagens/2148447103.jpg">
-                <div class="article">
-                    <h1>Infecção por Adenovírus (ADE), Influenza A (FLUA), Influenza B (FLUB), Parainfluenza 1, 2 E 3 E Vírus Respiratório Sincicial (VRS) em crianças menores que 5 anos hospitalizadas: antes e durante a pandemia de COVID-19.</h1>
-                </div>
-                <div class="text"><a href="https://doi.org/10.1016/j.bjid.2021.102273" target="_blank">Read more</a></div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-            <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <section>
             
+        </div>
+        <div class="mySlides">
+            <div class="numberText fade"></div>
+            <!-- <img src="imagens/backgroundBlueMetalic.png" alt="Paper Esterase"> -->
+            <div class="slideText">
+                <h1>Assessment of Kaistella jeonii esterase conformational dynamics in response to poly(ethylene terephthalate) binding. Current Research In Structural Biology</h1>
+                <p></p>
+                <a href="https://doi.org/10.1016/j.crstbi.2024.100130" target="_blank">Read more</a>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="numberText"></div>
+            <!-- <img src="imagens/backgroundBlueMetalic.png" alt="Paper Virus"> -->
+            <div class="slideText fade">
+                <h1>Infecção por Adenovírus (ADE), Influenza A (FLUA), Influenza B (FLUB), Parainfluenza 1, 2 E 3 E Vírus Respiratório Sincicial (VRS) em crianças menores que 5 anos hospitalizadas: antes e durante a pandemia de COVID-19.</h1>
+                <p></p>
+                <a href="https://doi.org/10.1016/j.bjid.2021.102273" target="_blank">Read more</a>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText"></div>
+            <!-- <img src="imagens/backgroundBlueMetalic.png" alt="Paper COVID"> -->
+            <div class="slideText">
+                <h1> Impacto da pandemia de COVID-19 na concentraçaõ inibitória mínima para polimixina B em isolados de <em>Acinetobacter baumannii</em> resistentes aos carbapenêmicos: Experiência de um hospital terciário.</h1>
+                <p></p>
+                <a href="https://doi.org/10.1016/j.bjid.2021.102244" target="_blank">Read more</a>
+            </div>
+        </div>
+        <button id="nextSlide" onclick="plusSlides(1)">&#10095;</button>
+        <button id="prevSlide" onclick="plusSlides(-1)">&#10094;</button>
+    </div>
+    <div id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <main>
+        <section>
+            <h1>How everything started</h1>
+            <p>This site was created to train HTML5, CSS and JavaScript. To do so, the pretensions are to improve style and create basic tools in cellular biology and general health. </p>
         </section>
     </main>
     <footer>
+        <a href="https://www.instagram.com/ferguimac/" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
     </footer>
-    <script src="./JS/slideshow.js"></script>
+    <script src="JS/slideShow.js"></script>
 </body>
 </html>
