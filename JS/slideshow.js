@@ -9,9 +9,9 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-/*setInterval(() => {
+setInterval(() => {
   plusSlides(1);
-}, 3000);*/
+}, 3000);
 
 function showSlides(n) {
   let i;
