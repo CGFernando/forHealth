@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="./../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to forHealth!</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="./../index.html" target="_self">
+                <button>Home             
+                </button>
+            </a>
+        </div>
+        <div id="dropTools">
+            <button id="btnTools">Tools</button>
+            <div id="tools">
+                <a href="reverse.html" target="_self">Reverse</a>
+                <a href="complement.html" target="_self">Complement</a>
+                <a href="reverse-complement.html" target="_self">Reverse-Complement</a>
+                <a href="bmi.html" target="_self"><abbr title="IMC">BMI</abbr></a>
+            </div>
+        </div>
+        <div>
+            <a href="about.html" target="_self">
+                <button>
+                    About
+                </button>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>Body Mass Index (BMI) calculator</h1>
+            <p>Calculate the BMI value, taking age into consideration.</p>
+            <div id="inputs">
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age"><br>
+                <label for="gender">Gender: </label>
+                <label for="genderM">Male</label>
+                <input type="radio" name="gender" id="genderM">
+                <label for="genderF">Female</label>
+                <input type="radio" name="gender" id="genderF"><br>
+
+                <label for="height">Height (cm): </label>
+                <input type="number" name="height" id="height"><br>
+                <label for="weight">Weight (Kg): </label>
+                <input type="number" name="weight" id="weight"><br>
+                <button type="button" onclick="calculate()">Calculate</button>
+                <div id="result"></div>
+            </div>
+
+            <article>
+                <h2>World Health Organization's recommendation</h2>
+                <h3>BMI table for adults</h3>
+                <p>Body weight based on BMI values for adults. It is used for both men and women, age 20 or older.</p>
+                <table>
+                    <tr>
+                        <th>Classification</th>
+                        <th>BMI range - Kg/m<sup>2</sup></th>
+                    </tr>
+                    <tr>
+                        <td>Severe Thinness</td>
+                        <td>&lt; 16</td>
+                    </tr>
+                    <tr>
+                        <td>Moderate Thinness</td>
+                        <td>16 - 17</td>
+                    </tr>
+                    <tr>
+                        <td>Mild Thinness</td>
+                        <td>17 - 18.5</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>18.5 - 25</td>
+                    </tr>
+                    <tr>
+                        <td>Overweight</td>
+                        <td>25 - 30</td>
+                    </tr>
+                    <tr>
+                        <td>Obese Class I</td>
+                        <td>30 - 35</td>
+                    </tr>
+                    <tr>
+                        <td>Obese Class II</td>
+                        <td>35 - 40</td>
+                    </tr>
+                    <tr>
+                        <td>Obese Class III</td>
+                        <td>&gt; 40</td>
+                    </tr>
+                </table>
+                <h3>BMI table for children and teens, age 2-20</h3>
+                <p>The Centers for Disease Control and Prevention (CDC) recommends BMI categorization for children and teens between age 2 and 20.</p>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Percentile Range</th>
+                    </tr>
+                    <tr>
+                        <td>Underweight</td>
+                        <td>&lt; 5%</td>
+                    </tr>
+                    <tr>
+                        <td>Healthy weight</td>
+                        <td>5% - 85%</td>
+                    </tr>
+                    <tr>
+                        <td>At risk of overweight</td>
+                        <td>85% - 95%</td>
+                    </tr>
+                    <tr>
+                        <td>Overweight</td>
+                        <td>&gt; 95%</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+    <script src="./../JS/bmi.js"></script>
+</body>
+</html>
+
+<!-- https://www.calculator.net/bmi-calculator.html?cage=33&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=173&ckg=97&printit=0&ctype=metric&x=Calculate -->

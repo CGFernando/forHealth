@@ -124,7 +124,17 @@ body > main > section > h1 {
     height: 25%;
 }
 
+body > main > section > h1 {
+    font-size: 2em;
+}
+
+body > main > section > h2 {
+    font-size: 1.7em;
+    margin: 25px 0px;
+}
+
 body > main > section > p {
+    margin-bottom: 15px;
     font-size: 1.2em;
     text-align: center;
     text-indent: 50px;
@@ -139,8 +149,12 @@ body > main > section > p {
 }
 
 #inputs {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 15px;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(129, 179, 245);
 }
 
 #inputs > label {
@@ -149,11 +163,11 @@ body > main > section > p {
 
 #inputs > input {
     margin-bottom: 30px;
+    color: black;
 }
 
 #inputs > textarea {
     margin-top: 20px;
-    color: black;
 }
 
 #inputs > button {
@@ -171,9 +185,57 @@ body > main > section > p {
 }
 
 #result {
+    display: none;
     margin-top: 20px;
-    background-color: transparent;
+    padding: 15px;
+    background-color: #def5892d;
     word-break: break-all;
     overflow-wrap: break-word;
+    border-style: solid;
+    box-shadow: inset 0px 0px 10px 1px #def58981;
 }
 
+#result > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+article {
+    margin: 30px 0px;
+    padding: 15px 0px;
+}
+
+article h2, h3, p {
+    padding: 10px 0px;
+}
+
+article h2 {
+    font-size: 1.7em;
+}
+
+article h3 {
+    font-size: 1.5em;
+}
+
+article p {
+    font-size: 1.2em;
+}
+
+/* Table */
+
+table {
+    margin: auto;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+th, td {
+    border-style: solid;
+    padding: 5px;
+}
+
+table th {
+    background-color: rgba(28, 28, 255, 0.767);
+    font-size: 1.3em;
+    padding: 5px;
+}

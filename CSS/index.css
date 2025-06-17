@@ -23,10 +23,10 @@ header {
 
 header > h1 {
     text-align: center;
-    font-size: 2.5em;
-    color: #49A7FF;
+    font-size: 3em;
+    color: #0668c4;
     border: black;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Menu */
@@ -139,9 +139,11 @@ nav > a:hover, nav > div:hover {
     padding: 10px;
     border-style: solid;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right bottom, rgba(250, 242, 135, 1) 20%, rgba(228, 250, 135, 1) 40%, rgba(135, 222, 250, 1) 60%, rgba(112, 93, 122, 1) 80%, rgba(122, 120, 93, 1) 100%);
 }
 
 .slideText > a:hover {
