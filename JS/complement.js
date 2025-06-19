@@ -25,4 +25,5 @@ function doComplement(){
     } else {
         alert('Choose the correct nucleotides according to the chosen option.')
     }
+    res.style.display = 'block'
 }

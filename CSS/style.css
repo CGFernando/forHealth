@@ -136,7 +136,7 @@ body > main > section > h2 {
 body > main > section > p {
     margin-bottom: 15px;
     font-size: 1.2em;
-    text-align: center;
+    text-align: justify;
     text-indent: 50px;
     line-height: 1.5em;
 }
@@ -168,9 +168,12 @@ body > main > section > p {
 
 #inputs > textarea {
     margin-top: 20px;
+    color: black;
 }
 
 #inputs > button {
+    display: block;
+    margin: auto;
     margin-top: 15px;
     padding: 15px 15px;
     background-color: var(--botoes-body);
@@ -182,6 +185,26 @@ body > main > section > p {
 #inputs > button:hover {
     background-color: var(--botoes-body-hover);
     cursor: pointer;
+}
+
+#inputs > fieldset {
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+
+#inputs > fieldset > legend {
+    background-color: rgb(60, 110, 204);
+    font-size: 1.3em;
+}
+
+#inputs > fieldset > label, input {
+    margin: 5px;
+}
+
+#inputs > fieldset > input {
+    color: black;
 }
 
 #result {
