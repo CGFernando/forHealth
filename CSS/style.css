@@ -167,7 +167,8 @@ body > main > section > p {
 }
 
 #inputs > textarea {
-    margin-top: 20px;
+    margin: 20px auto;
+    width: 100%;
     color: black;
 }
 
