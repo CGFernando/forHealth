@@ -39,15 +39,15 @@ nav {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-nav > a, nav > div {
+nav > a, nav > div, #toolsLink > a {
     padding: 10px 10px;
     margin: 0px 5px;
-    background-color: hsla(225, 100%, 80%, 0.4);
     background-color: #BACDFF;
     border-radius: 10px;
     font-size: 1.2em;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-style: solid;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav > a:hover, nav > div:hover {
@@ -72,17 +72,12 @@ nav > a:hover, nav > div:hover {
 
 #toolsLink > a {
     display: block;
-    padding: 10px 10px;
     margin: 0px 0px 5px 0px;
-    background-color: #BACDFF;;
-    border-radius: 10px;
-    font-size: 1.2em;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    border-style: solid;
+    background-color: hsla(225, 100%, 80%, 0.6);
 }
 
 #toolsLink > a:hover {
-    background-color: hsla(225, 100%, 80%, 0.6);
+    background-color: #bacdff;
 }
 
 /* Slide Show */
@@ -95,33 +90,39 @@ nav > a:hover, nav > div:hover {
     background-image: linear-gradient(to right, #FAF9B9, #FAF898, #FAEE73, #FAEA50, #FAE52D);
 }
 
+.mySlides {
+    display: none;
+}
+
+.mySlidesActive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 .mySlides > img {
-    position: absolute;
+    flex-shrink: 1;
+    flex-grow: 0;
     width: 188px;
-    height: 283px;
-    right: 150px;
+    height: auto;
 }
 
 .slideText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    flex: 1 1 50%;
     max-width: 1000px;
-    width: 65%;
-    height: 90%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: center;
 }
 
 .slideText > h1 {
+    margin-bottom: 20px;
     font-size: 1.5em;
     line-height: 1.3em;
     text-align: justify;
-    text-overflow: ellipsis;
     overflow: hidden;
 }
 
@@ -131,11 +132,11 @@ nav > a:hover, nav > div:hover {
     font-size: 1.1em;
     text-align: justify;
     text-indent: 35px;
-    text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .slideText > a {
+    margin-bottom: 20px;
     padding: 10px;
     border-style: solid;
     border-radius: 10px;
@@ -150,31 +151,25 @@ nav > a:hover, nav > div:hover {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
-#nextSlide {
+#nextSlide, #prevSlide {
     position: absolute;
-    right: 0%;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.1);
+    border: hidden;
+    background-color: transparent;
     padding: 0px 3px;
     font-size: 1.5em;
     cursor: pointer;
 }
 
-#nextSlide:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+#nextSlide {
+    right: 0%;
 }
 
 #prevSlide {
-    position: absolute;
     left: 0%;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 0px 3px;
-    font-size: 1.5em;
-    cursor: pointer;
 }
 
-#prevSlide:hover {
+#nextSlide:hover, #prevSlide:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -187,10 +182,10 @@ nav > a:hover, nav > div:hover {
     margin: 0px 5px 50px 5px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.25);
-    border-style: solid;
-    border-radius: 50px;
+    border: solid black;
+    border-radius: 50%;
     cursor: pointer;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .active, .dot:hover {
