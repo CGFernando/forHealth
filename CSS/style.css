@@ -30,62 +30,49 @@ header h1 {
     box-shadow: 3px 3px 10px black;
 }
 
+/* Menu */
+
 nav {
+    padding: 10px 0px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     background-color: var(--menu);
 }
 
-nav > div {
-    margin: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-nav div button {
+nav a, #tools {
+    margin: 0px 10px;
     padding: 10px 20px;
     background-color: var(--botoes-menu);
+    border: 1px solid gray;
     border-radius: 10px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
     text-align: center;
     cursor: pointer;
     font-size: 1.2em;
 }
 
-nav div button:hover {
+nav a:hover, #tools:hover  {
     background-color: var(--botoes-menu-hover);
 }
 
-#dropTools {
-    position: relative;
-}
-
-#dropTools:hover #tools {
+#tools:hover #toolsLink {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
+    gap: 10px 0px;
 }
  
-#tools {
+#toolsLink {
     display: none;
     position: absolute;
     z-index: 1;
 }
 
-#tools > a {
-    margin: 5px 0px;
-    padding: 10px 10px;
-    background-color: var(--botoes-menu);
-    border-style: solid;
-    border-radius: 10px;
-    border-color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-#tools > a:hover {
-    background-color: var(--botoes-menu-hover);
+#toolsLink > a {
+    margin: 0px -15px;
 }
 
 body, main {

@@ -58,16 +58,16 @@ nav > a:hover, nav > div:hover {
     position: relative;
 }
 
+#tools:hover #toolsLink {
+    display: block;
+}
+
 #toolsLink {
     display: none;
     position: absolute;
     z-index: 1;
     margin-top: 12px;
     margin-left: -10px;
-}
-
-#tools:hover #toolsLink{
-    display: block;
 }
 
 #toolsLink > a {
