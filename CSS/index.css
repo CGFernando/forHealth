@@ -65,8 +65,6 @@ header > h1 {
 }
 
 #loginContainerHidden > button {
-    display: block;
-    margin: auto;
     padding: 5px 10px;
     font-size: 1em;
     background: linear-gradient(white, white) padding-box,

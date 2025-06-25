@@ -13,12 +13,13 @@
         <div id="loginContainer">
             <button>Sign in <span class="fa fa-caret-down"></span></button>
             <div id="loginContainerHidden">
-                <label for="login">Login: </label>
-                <input type="text" name="login" id="login">
-            
+                <label for="username">Login: </label>
+                <input type="text" name="username" id="username" required>
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password">
-                <button type="button">Log in</button>
+                <input type="password" name="password" id="password" required>
+                <button type="button" onclick="loginValidation()">Log in</button>
+                <button type="button" onclick="logout()">Log out</button>
+                <p id="loginMessage"></p>
             </div>
         </div>
     </header>
@@ -75,6 +76,10 @@
         <a href="https://www.instagram.com/ferguimac/" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
     </footer>
     <script src="./JS/slideshow.js"></script>
-    <script src="menu.js"></script>
+    <script src="./JS/menu.js"></script>
+    <script src="./JS/loginValidation.js" type="module"></script>
+    <!-- 
+    <script type="module"> O navegador entende que loginValidation.js é um módulo JavaScript e permite import() dinâmico corretamente. Quando usa import(), exige que o script onde ele está seja do tipo module.
+    -->
 </body>
 </html>
