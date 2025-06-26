@@ -45,6 +45,11 @@ header > h1 {
     border-radius: 10px;
     background-color: #0668c41c;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#loginContainer span {
+    color: white;
 }
 
 #loginContainer:hover #loginContainerHidden {
@@ -56,6 +61,10 @@ header > h1 {
     align-self: flex-end;
     padding: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#loginContainerHidden > label {
+    color: white;
 }
 
 #loginContainerHidden > label, #loginContainerHidden > input {
@@ -105,7 +114,7 @@ nav > a, nav > div, #toolsLink > a {
 }
 
 nav > a:hover, nav > div:hover {
-    background-color: hsla(225, 100%, 80%, 0.6);
+    background-color: hsla(225, 100%, 80%, 1);
 }
 
 #tools {
@@ -127,7 +136,7 @@ nav > a:hover, nav > div:hover {
 #toolsLink > a {
     display: block;
     margin: 0px 0px 5px 0px;
-    background-color: hsla(225, 100%, 80%, 0.6);
+    background-color: hsla(225, 100%, 80%, 1);
 }
 
 #toolsLink > a:hover {
@@ -138,7 +147,6 @@ nav > a:hover, nav > div:hover {
 
 #slideShowContainer {
     position: relative;
-    margin: auto;
     width: 100%;
     min-height: 300px;
     background-image: linear-gradient(to right, #FAF9B9, #FAF898, #FAEE73, #FAEA50, #FAE52D);
@@ -153,10 +161,10 @@ nav > a:hover, nav > div:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-content: space-around;
     width: 100%;
     min-height: 300px;
-    padding: 0px 30px;
+    padding: 30px 30px 0px 30px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -168,13 +176,16 @@ nav > a:hover, nav > div:hover {
 }
 
 .slideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1 1 50%;
     max-width: 1000px;
     text-align: center;
 }
 
 .slideText > h1 {
-    margin-bottom: 20px;
     font-size: 1.5em;
     line-height: 1.3em;
     text-align: justify;
@@ -182,7 +193,6 @@ nav > a:hover, nav > div:hover {
 }
 
 .slideText > p {
-    margin-bottom: 20px;
     line-height: 1.3em;
     font-size: 1.1em;
     text-align: justify;
@@ -191,11 +201,10 @@ nav > a:hover, nav > div:hover {
 }
 
 .slideText > a {
-    margin-bottom: 10px;
     padding: 10px;
     border-style: solid;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     background: linear-gradient(to right bottom, rgba(250, 242, 135, 1) 20%, rgba(228, 250, 135, 1) 40%, rgba(135, 222, 250, 1) 60%, rgba(112, 93, 122, 1) 80%, rgba(122, 120, 93, 1) 100%);

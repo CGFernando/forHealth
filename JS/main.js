@@ -10,7 +10,7 @@ window.loginValidation = function () {
     if (user) {
         saveLogin(username);
         message.textContent = "Login successful!";
-        message.style.color = "green";
+        //message.style.color = "green";
         loadLoggedMenu();
     } else {
         message.textContent = "Invalid username or password.";
@@ -40,6 +40,6 @@ if (user) {
     const message = document.getElementById("loginMessage");
     if (message) {
         message.textContent = `Welcome back, ${user}!`;
-        message.style.color = "green";
+        //message.style.color = "green";
     }
 }
