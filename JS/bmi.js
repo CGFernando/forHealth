@@ -41,6 +41,26 @@ function validWeight(weight) {
     }
 }
 
+function classificationBMI(bmi) {
+    if (bmi < 16) {
+        return 'Severe Thinness'    
+    } else if (bmi < 17) {
+        return 'Moderate Thinness'
+    } else if (bmi < 18.5){
+        return 'Mild Thinness'
+    } else if (bmi < 25){
+        return 'Normal'
+    } else if (bmi < 30){
+        return 'Overweight'
+    } else if (bmi < 35){
+        return 'Obese Class I'
+    } else if (bmi <= 40){
+        return 'Obese Class II'
+    } else if (bmi > 40){
+        return 'Obese Class III'
+    }
+}
+
 function calculate() {
     let age = Number(document.getElementById('age').value)
     let height = Number(document.getElementById('height').value)
@@ -52,11 +72,13 @@ function calculate() {
     let validatedHeight = validHeight(height)
     let validatedWeight = validWeight(weight)
     let calculatedBmi = bmi(validatedWeight, validatedHeight)
+    let classification = classificationBMI(calculatedBmi)
     
     res.style.display = 'block'
-    res.innerHTML = `<p>Sua idade é: ${validatedAge} anos</p>`;
-    res.innerHTML += `<p>Gênero: ${validatedGenders}</p>`;
-    res.innerHTML += `<p>Altura: ${validatedHeight} cm</p>`;
-    res.innerHTML += `<p>Peso: ${validatedWeight} Kg</p>`;
-    res.innerHTML += `<p>Seu IMC é: ${calculatedBmi.toFixed(2)}</p>`  // toFixed Limita a 2 casas decimais
+    res.innerHTML = `<p>Age: ${validatedAge}</p>`;
+    res.innerHTML += `<p>Gender: ${validatedGenders}</p>`;
+    res.innerHTML += `<p>Height: ${validatedHeight} cm</p>`;
+    res.innerHTML += `<p>Weight: ${validatedWeight} Kg</p>`;
+    res.innerHTML += `<p>BMI: ${calculatedBmi.toFixed(2)}</p>`  // toFixed Limita a 2 casas decimais
+    res.innerHTML += `<p>Classification: ${classification}</p>`
 }
