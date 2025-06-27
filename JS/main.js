@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const btSignin = document.getElementById('btSignin');
     const btLogin  = document.getElementById('btLogin');
     const btLogout  = document.getElementById('btLogout');
-
     if (getLoggedUser()) {
         // Usuário já logado → ajusta UI
         btSignin.textContent = 'Signned in';
