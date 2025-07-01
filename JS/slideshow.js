@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 setInterval(() => {
   plusSlides(1);
-}, 3000);
+}, 5000);
 
 function showSlides(n) {
   let i;
